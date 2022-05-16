@@ -1,0 +1,137 @@
+ *{
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background: #e9ecf4;
+    color: #000;
+    font-family: 'roboto', sans-serif;
+    background-image: url('img/fondo.jpg');
+
+
+}
+
+.contenedor {
+    width:  100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+
+
+}
+.contenedor > div,
+.contenedor .menu
+.contenedor .footer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    
+
+}
+.contenedor .menu {
+    background: #0087AB;
+    color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0; 
+    width: 100%;
+    float: left;
+    
+    
+
+}
+
+.contenedor .bienvenido {
+    background: #0087AB;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+
+
+
+}
+
+.contenedor .login {
+    background: #0087AB;
+    color: #fff;
+    grid-column: 2 / 2;
+    text-align: center;
+    
+    
+    
+}
+.contenedor .bienvenido {
+    width: 100%;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;  
+    display: block;
+}
+.menu li {
+    display: inline-block;
+    text-align: center;
+
+}   
+.menu li a:hover {
+    background: #ef8354;
+}
+.form-register {
+    width: 400px;
+    background: #0087AB;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    
+}
+.form-register h1 {
+    font-size: 45px;
+    align-items: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls {
+    width: 100%;
+    background:#b1bdd6;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #0087AB;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black; 
+}
+.form-register p {
+    height: 2px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2px;
+}
+.form-register a {
+    color: white;
+    text-decoration: none;
+
+}
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border:none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
