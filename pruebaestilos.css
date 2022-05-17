@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.column {
+    float: right;
+    width: 33.33%;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+body{
+    background-color: rgb(255, 209, 220);
+}
+#fotoGente{
+    width: 550px;
+    height: 1000px;
+}
+header{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(135, 206, 235);
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    font-size: 30px;
+}
+.nav_links li a:hover{
+    color: rgba(255, 192, 203, 2);
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(0, 136, 169,0.8);
+}
+
+.form-register {
+    width: 400px;
+    background: rgba(254, 189, 204, 2);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.484);
+  }
+
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: rgba(135, 207, 235, 0.605);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(58, 174, 220);
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+
+  ::placeholder{
+       color: white;
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169,1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
