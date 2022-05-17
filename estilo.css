@@ -1,14 +1,17 @@
+
  *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-shadow:0px 1px 0px #000000;
+    
 } 
 
 body {
     background: #e9ecf4;
     color: #000;
-    font-family: 'roboto', sans-serif;
-    background: rgb(174,238,207);
-    background: radial-gradient(circle, rgba(174,238,207,1) 0%, rgba(0,135,171,1) 100%);
+    background: rgb(2,86,138);
+background: linear-gradient(90deg, rgba(2,86,138,1) 2%, rgba(106,155,186,1) 54%);
     
 
 
@@ -16,10 +19,10 @@ body {
 
 .contenedor {
     width:  100%;
-    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    
 
 
 
@@ -27,20 +30,21 @@ body {
 .contenedor > div,
 .contenedor .menu
 .contenedor .footer {
-    background: #fff;
+    
     padding: 20px;
     border-radius: 4px;
+    
     
 
 }
 .contenedor .menu {
-    background: #0087AB;
-    color: #fff;
+    background: #02568A;
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 0; 
     width: 100%;
-    float: left;
+    height: 6em;
+    
     
     
 
@@ -51,8 +55,6 @@ body {
     height: 360px;
     grid-column-start: 1;
     grid-column-end: 2;
-    background: rgb(0,135,171);
-    background: linear-gradient(180deg, rgba(0,135,171,1) 36%, rgba(111,198,182,1) 77%);
     margin-top: 150px;
     
 
@@ -60,44 +62,47 @@ body {
 
 }
 
-.imagen_homebanking {
-    width: 870px;
-    height: 360px;
+.logo_itbank {
+    width: 10em;
+    height: 7em;
+    position: absolute;
+    left: 44%;
+    padding: 0%;
+    margin-top: -0.6em;
+   
+    
 }
 
+.imagen_homebanking {
+    width: 60em;
+    height: 25em;
+    border-radius: 40px;
+    box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
+    -webkit-box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
+    -moz-box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
+    margin-left: 8em;
+}
 
 .contenedor .login {
-    background: rgb(0,135,171);
-    background: linear-gradient(180deg, rgba(0,135,171,1) 36%, rgba(0,171,163,0.40940126050420167) 74%);
+    background: rgb(2,86,138);
+    background: linear-gradient(180deg, rgba(2,86,138,1) 30%, rgba(88,143,178,1) 76%);
     color: #fff;
     grid-column: 2 / 2;
     text-align: center;
     margin-top: 150px;
     margin-left: 100px;
     box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
--webkit-box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
--moz-box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
-    
+    -webkit-box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
+    -moz-box-shadow: 12px 12px 12px 1px rgba(54,54,54,0.69);
+    width: 30em;
+    border-radius: 26px;
     
     
 }
 .contenedor .bienvenido {
     width: 100%;
 }
-.menu li a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;  
-    display: block;
-}
-.menu li {
-    display: inline-block;
-    text-align: center;
 
-}   
-.menu li a:hover {
-    background: #ef8354;
-}
 .form-register {
     width: 400px;
     text-shadow:0px 1px 0px #0c1418;
@@ -125,9 +130,9 @@ body {
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #0087AB;
-    font-family: 'calibri';
     font-size: 18px;
     color: black; 
+    text-shadow:0px 1px 0px #94a1a5;
 }
 .form-register p {
     height: 2px;
@@ -145,11 +150,12 @@ body {
     text-decoration: underline;
 }
 .form-register .botons {
-    width: 100%;
-    margin: 16px 0;
+    width: 106%;
+    margin: 1em;
+    margin-left: -0.1em;
     font-size: 16px;
     box-shadow: 0px 10px 14px -7px #276873;
-    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background:linear-gradient(to top, rgba(88,143,178,1)5%, rgba(2,86,138,1) 100%);
     background-color:#599bb3;
     border-radius:8px;
     border: none;
@@ -162,10 +168,54 @@ body {
     }
     
     .botons:hover {
-        background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background:linear-gradient(to bottom, rgba(88,143,178,1)5%, rgba(2,86,138,1) 100%);
         background-color:#408c99;
     }
     .botons:active {
         position:relative;
         top:1px;
     }
+
+.ayuda {
+       
+        
+        font-size: 1em;
+        height: 4em;
+        width: 11.5em;
+        box-shadow: 0px 10px 14px -7px #276873;
+        background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+        background-color:#599bb3;
+        border-radius:15px;
+        border: none;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-weight:bold;
+        padding:13px 32px;
+        text-shadow:0px 1px 0px #3d768a;
+        position: absolute;
+        
+        
+        }
+        
+        .ayuda:hover {
+            background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+            background-color:#408c99;
+        }
+        .ayuda:active {
+            position:relative;
+            top:1px;
+        }
+
+.link_mesa {
+    margin-top: 1em;
+    margin-left: 105em;
+    position: absolute;
+}
+
+.logo_mini {
+    width: 6em;
+    position: relative;
+    margin-top: -2em;
+    margin-left: 1em;
+}
